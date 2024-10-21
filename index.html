@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&family:Playfair+Display:wght@700&family:Montserrat:wght@500&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empathera Healthcare Systems</title>
@@ -10,12 +12,92 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #faf8fa;
             color: #333;
         }
 
         html {
             scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #faf8fa;
+            color: #333;
+        }
+
+        .navbar .nav-links a {
+            font-family: 'Montserrat', sans-serif;
+            color: #433b69;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .navbar .logo img {
+            max-height: 125px;
+            margin-top: 10px;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5em;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 2.5em;
+            color: #433b69;
+            margin-bottom: 30px;
+        }
+
+        section p {
+            font-family: 'Lato', sans-serif;
+            font-size: 1.1em;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .circle .btn {
+            font-family: 'Montserrat', sans-serif;
+            padding: 10px 25px;
+            background-color: transparent;
+            color: #7966be;
+            border: 2px solid #7966be;
+            border-radius: 50px;
+            font-size: 1.2em;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .circle .btn:hover {
+            background-color: #7966be;
+            color: white;
+        }
+
+        .contact-form label {
+            font-family: 'Lato', sans-serif;
+            font-size: 1.4em;
+            margin-bottom: 8px;
+        }
+
+        .contact-form button {
+            font-family: 'Montserrat', sans-serif;
+            padding: 15px 20px;
+            background-color: #7966be;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+
+        .contact-form button:hover {
+            background-color: #433b69;
         }
 
         .navbar {
@@ -28,13 +110,12 @@
             position: sticky;
             top: 0;
             z-index: 1000;
+            height: 50px;
         }
 
-        .navbar .logo {
-            font-size: 1.8em;
-            font-weight: bold;
-            color: #003366;
-            text-decoration: none;
+        .navbar .logo img {
+            max-height: 125px;
+            margin-top: 10px;
         }
 
         .navbar .nav-links {
@@ -49,7 +130,7 @@
         }
 
         .navbar .nav-links a {
-            color: #003366;
+            color: #433b69;
             text-decoration: none;
             font-size: 1.2em;
         }
@@ -64,7 +145,7 @@
             color: white;
             padding: 120px 0;
             text-align: center;
-            background-color: #003366;
+            background-color: #433b69;
         }
 
         header h1 {
@@ -79,7 +160,7 @@
         }
 
         nav {
-            background-color: #003366;
+            background-color: #433b69;
             padding: 15px 0;
             text-align: center;
         }
@@ -99,7 +180,7 @@
         section {
             padding: 50px;
             margin: 20px 0;
-            background-color: white;
+            background-color: #faf8fa;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             max-width: 1200px;
@@ -108,9 +189,101 @@
         }
 
         h2 {
-            color: #003366;
+            color: #433b69;
             font-size: 2.5em;
             margin-bottom: 30px;
+        }
+
+        .problem-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 50px;
+            background-color: #faf8fa;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .problem-text {
+            width: 55%;
+            padding-right: 20px;
+        }
+
+        .problem-image {
+            width: 40%;
+            text-align: right;
+        }
+
+        .problem-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .problem-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .problem-text,
+            .problem-image {
+                width: 100%;
+            }
+
+            .problem-image {
+                margin-top: 20px;
+            }
+        }
+
+        .overview-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 50px;
+            background-color: #faf8fa;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .overview-image {
+            width: 40%;
+            text-align: left;
+        }
+
+        .overview-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+
+        .overview-text {
+            width: 55%;
+            padding-left: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .overview-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .overview-image,
+            .overview-text {
+                width: 100%;
+            }
+
+            .overview-image {
+                margin-bottom: 20px;
+            }
         }
 
         .news-section {
@@ -129,7 +302,7 @@
             min-width: 370px;
             margin-right: 20px;
             flex-shrink: 0;
-            background-color: #fff;
+            background-color: #faf8fa;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
@@ -160,13 +333,13 @@
         .news-title {
             font-size: 1.2em;
             margin-bottom: 15px;
-            color: #003366;
+            color: #433b69;
             word-break: break-word;
         }
 
         .learn-more {
             text-decoration: none;
-            color: #0073e6;
+            color: #7966be;
             font-weight: bold;
             margin-top: auto;
         }
@@ -186,15 +359,17 @@
             cursor: pointer;
             border-radius: 50%;
             font-size: 1.5em;
+            width: 50px;
+            height: 50px;
         }
 
         .arrow-left {
-            left: 10px;
+            left: -40px;
             display: none;
         }
 
         .arrow-right {
-            right: 10px;
+            right: -40px;
         }
 
         .arrow[disabled] {
@@ -202,27 +377,130 @@
             background-color: rgba(0, 0, 0, 0.2);
         }
 
-        footer {
-            background-color: #003366;
-            color: white;
-            text-align: center;
-            padding: 30px 0;
-            margin-top: 40px;
+        .join-contact-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 50px;
+            background-color: #faf8fa;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .contact {
-            background-color: #0073e6;
-            color: white;
-            padding: 20px;
+        .circle {
+            width: 400px;
+            height: 400px;
+            border: 5px solid #7966be;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
-            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin-left: 0px;
+            width: 100%;
+            padding: 0px;
+        }
+
+        .circle h2 {
+            font-size: 1.5em;
+            color: #433b69;
+            margin-bottom: 10px;
+        }
+
+        .circle p {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .circle .btn {
+            padding: 10px 25px;
+            background-color: transparent;
+            color: #7966be;
+            border: 2px solid #7966be;
+            border-radius: 50px;
+            font-size: 1.2em;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .circle .btn:hover {
+            background-color: #7966be;
+            color: white;
+        }
+
+        .contact-form label {
+            font-size: 1.4em;
+            margin-bottom: 8px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 15px;
+            margin-bottom: 25px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1.2em;
+            width: 100%;
+        }
+
+        .contact-form button {
+            padding: 15px 20px;
+            background-color: #7966be;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+
+        .contact-form button:hover {
+            background-color: #433b69;
+        }
+
+        footer {
+            background-color: #433b69;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .join-contact-section {
+                flex-direction: column;
+                align-items: center;
+                padding: 30px;
+            }
+
+            .contact-form {
+                margin-left: 0;
+                max-width: 100%;
+                width: 100%;
+            }
+
+            .circle {
+                width: 350px;
+                height: 350px;
+            }
         }
     </style>
 </head>
 
 <body>
     <div class="navbar">
-        <a href="#" class="logo">Empathera</a>
+        <a href="index.html" class="logo">
+            <img src="images/empathera-logo.png" alt="Empathera Logo">
+        </a>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
@@ -235,28 +513,62 @@
     </header>
 
     <nav>
-        <a href="#overview">Overview</a>
         <a href="#problem">Problem</a>
+        <a href="#overview">Overview</a>
         <a href="#news">News</a>
-        <a href="#about">Technology</a>
-        <a href="#research">Research</a>
         <a href="#contact">Contact</a>
     </nav>
 
-    <section id="overview">
-        <h2>Overview</h2>
-        <p>Empathera focuses on integrating advanced technologies to prevent pressure ulcers and improve patient safety through innovative solutions.</p>
+    <section id="problem" class="problem-section">
+        <div class="problem-text">
+            <h2>Problem</h2>
+            <p>
+                Pressure ulcers affect over 2.5 million Americans annually, costing the healthcare system approximately $11 billion USD each year. 
+                These painful, potentially life-threatening wounds significantly impact patient quality of life and can lead to severe complications.
+                The burden on healthcare workers, especially nurses, is immense. Current prevention methods require repositioning patients every two hours, 
+                which is time-consuming and can cause physical strain on already overworked caregivers. With healthcare staff shortages and burnout rates at critical levels, 
+                there's an urgent need for an innovative solution that can both improve patient outcomes and alleviate the workload on healthcare professionals.
+            </p>
+        </div>
+        <div class="problem-image">
+            <img src="images/problem.jpg" alt="Problem Image">
+        </div>
     </section>
 
-    <section id="problem">
-        <h2>Problem</h2>
-        <p style="text-align: center; font-size: 1.5em; font-weight: bold;">Active pressure ulcer prevention to uphold patient safety</p>
+    <section id="overview" class="overview-section">
+        <div class="overview-image">
+            <img src="images/overview.png" alt="Overview Image">
+        </div>
+        <div class="overview-text">
+            <h2>Overview</h2>
+            <p>
+                StimSense is an innovative pressure ulcer prevention system addressing a critical healthcare issue affecting 2.5 million Americans annually.
+                It uses a sensor-integrated patch to monitor multiple data points, informing a smart algorithm that activates strategic interventions like 
+                pneumatic pressure relief and electrical muscle stimulation. Uniquely integrating with electronic health records, StimSense enhances care 
+                coordination while reducing burdens on healthcare workers. This system improves patient outcomes through real-time interventions and cushioned interfaces, 
+                offering an efficient solution to pressure ulcer care and promoting more equitable healthcare delivery.
+            </p>
+        </div>
     </section>
 
     <section id="news">
         <h2>News</h2>
         <div class="news-section">
             <div class="news-container" id="newsContainer">
+                <a href="https://hkust.edu.hk/news/institutional-advancement/hkust-sino-one-million-dollar-entrepreneurship-competition-2024#:~:text=Platinum%20Award%20(Champion)%20of%20HKUST,%2C%20Pawsible%20Foods%2C%20and%20Empathera." class="news-item" target="_blank">
+                    <img src="images/group.jpg" alt="News Image">
+                    <div class="news-content">
+                        <h3 class="news-title">HKUST-Sino One Million Dollar Entrepreneurship Competition 2024</h3>
+                        <p class="learn-more">Learn More</p>
+                    </div>
+                </a>
+                <a href="https://global.cornell.edu/news/hackathon-team-represents-cornell-hkust-entrepreneurship-competition" class="news-item" target="_blank">
+                    <img src="images/group2.jpg" alt="News Image">
+                    <div class="news-content">
+                        <h3 class="news-title">Hackathon Team Represents Cornell in HKUST Entrepreneurship Competition</h3>
+                        <p class="learn-more">Learn More</p>
+                    </div>
+                </a>
                 <a href="https://news.cornell.edu/stories/2024/03/students-29-campuses-join-forces-health-hackathon" class="news-item" target="_blank">
                     <img src="images/article1.jpg" alt="News Image 1">
                     <div class="news-content">
@@ -291,34 +603,30 @@
         </div>
     </section>
 
-    <section id="about">
-        <h2>Technology</h2>
-        <p>StimSense System</p>
-        <p>“Sensor-informed active pressure ulcer prevention system”</p>
-        <p>Features include:</p>
-        <ul>
-            <li>Strategic actuation and prevention measures</li>
-            <li>Analyzes multiple data points</li>
-            <li>Electronic health record integration</li>
-            <li>Cushioned patient interfaces</li>
-        </ul>
-    </section>
-
-    <section id="research">
-        <h2>Research</h2>
-        <ul>
-            <li>“Dynamic pneumatic movements have been found to reduce the incidence of new pressure ulcers compared to
-                foam surfaces and reactive gel surfaces.”</li>
-            <li>“EMS of the gluteus was found to decrease the relative risk of pressure ulcers by 85%.”</li>
-            <li>“EMS was found to be a safe and effective therapy for patients in the ICU.”</li>
-        </ul>
-    </section>
-
-    <footer id="contact">
-        <div class="contact">
-            <h2>Contact Us</h2>
-            <p>Email: <a href="mailto:Empathera01@gmail.com" style="color: white;">Empathera01@gmail.com</a></p>
+    <section class="join-contact-section">
+        <div class="circle">
+            <div>
+                <h2>Join the Conversation on Pressure Ulcer Care</h2>
+                <p>Are you a healthcare professional or someone affected by pressure ulcers? 
+                    We’d love to hear from you! Your insights can help us make a meaningful 
+                    impact in this critical area of healthcare.
+                </p>
+                <a href="mailto:Empathera01@gmail.com" class="btn">Contact us</a>
+            </div>
         </div>
+
+        <form class="contact-form" id="contact">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
         <p>&copy; 2024 Empathera. All Rights Reserved.</p>
     </footer>
 
@@ -335,7 +643,7 @@
         };
 
         rightArrow.addEventListener('click', () => {
-            const newsItemWidth = newsContainer.querySelector('.news-item').offsetWidth + 30; // Including margin
+            const newsItemWidth = newsContainer.querySelector('.news-item').offsetWidth + 30;
             scrollPosition += newsItemWidth;
             newsContainer.scrollTo({
                 left: scrollPosition,
@@ -345,7 +653,7 @@
         });
 
         leftArrow.addEventListener('click', () => {
-            const newsItemWidth = newsContainer.querySelector('.news-item').offsetWidth + 30; // Including margin
+            const newsItemWidth = newsContainer.querySelector('.news-item').offsetWidth + 30;
             scrollPosition -= newsItemWidth;
             newsContainer.scrollTo({
                 left: scrollPosition,
@@ -354,10 +662,8 @@
             updateArrows();
         });
 
-        // Initialize arrows visibility on load
         updateArrows();
 
-        // Function to break the title at 25 characters
         document.querySelectorAll('.news-title').forEach(title => {
             if (title.innerText.length > 25) {
                 const words = title.innerText.split(' ');
@@ -375,7 +681,15 @@
                 title.innerText = newTitle;
             }
         });
+
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            document.getElementById('formStatus').innerText = `Thank you, ${name}. Your message has been received.`;
+        });
     </script>
 </body>
-
 </html>
