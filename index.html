@@ -625,6 +625,36 @@
             }
         }
 
+        footer {
+            position: relative; /* Ensure the LinkedIn icon can be positioned relative to the footer */
+            display: flex; /* Use flexbox for easy alignment */
+            justify-content: space-between; /* Align text on the left and LinkedIn on the right */
+            align-items: center; /* Vertically center the items */
+            padding: 20px; /* Add padding inside the footer */
+            background-color: #433b69; /* Footer background color */
+            color: white; /* Footer text color */
+            text-align: center; /* Center the text content */
+        }
+
+        .linkedin-icon {
+            position: absolute; /* Place it relative to the footer */
+            bottom: 20px; /* Position it near the bottom */
+            right: 20px; /* Position it near the right */
+        }
+
+        .linkedin-icon img {
+            width: 40px; /* Adjust size of the LinkedIn icon */
+            height: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
+            transition: transform 0.3s ease; /* Add a hover effect */
+        }
+
+        .linkedin-icon img:hover {
+            transform: scale(1.1); /* Slightly enlarge the icon on hover */
+            cursor: pointer; /* Show pointer cursor on hover */
+        }
+
+
     </style>
 </head>
 
@@ -760,6 +790,9 @@
 
     <footer>
         <p>&copy; 2024 Empathera. All Rights Reserved.</p>
+        <a href="https://www.linkedin.com/company/empathera/" target="_blank" class="linkedin-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" />
+        </a>
     </footer>
 
     <script>
