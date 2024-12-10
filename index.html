@@ -242,49 +242,66 @@
 
         .overview-section {
             display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            padding: 50px;
+            justify-content: space-between; /* Align text and image with space between */
+            align-items: flex-start; /* Align content at the start */
+            padding: 50px; /* Same padding as Problem section */
             background-color: #faf8fa;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 1200px;
+            max-width: 1200px; /* Consistent width */
             margin-left: auto;
             margin-right: auto;
         }
 
+        .overview-text {
+            width: 55%; /* Same width as Problem section text */
+            padding-right: 20px; /* Match padding with Problem section */
+        }
+
         .overview-image {
-            width: 40%;
-            text-align: left;
+            width: 40%; /* Same width as Problem section image */
+            text-align: right; /* Align image to the right */
         }
 
         .overview-image img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-top: 40px;
-        }
-
-        .overview-text {
-            width: 55%;
-            padding-left: 20px;
+            width: 100%; /* Ensure the image fills its container */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 8px; /* Keep consistent border radius */
+            margin-top: 40px; /* Add consistent spacing */
         }
 
         @media (max-width: 768px) {
             .overview-section {
-                flex-direction: column;
-                text-align: center;
+                display: flex;
+                flex-direction: column; /* Stack content vertically */
+                text-align: center; /* Ensure text is aligned to the left */
+                padding: 50px; /* Match the padding of the problem section */
+                margin: 20px auto; /* Match the margin of the problem section */
+                max-width: 1200px; /* Ensure consistent max width */
             }
 
-            .overview-image,
             .overview-text {
-                width: 100%;
+                order: 1; /* Ensure text appears first */
+                width: 100%; /* Allow text to span full width */
+                margin-bottom: 20px; /* Add spacing below text */
             }
 
             .overview-image {
-                margin-bottom: 20px;
+                order: 2; /* Ensure image appears below text */
+                width: 100%; /* Allow image to span full width */
+                text-align: center; /* Center the image container */
+                margin-top: 20px; /* Add spacing above image */
+            }
+
+            .overview-image img {
+                width: 100%; /* Make the image fill the container */
+                max-width: 400px; /* Restrict maximum image width */
+                height: auto; /* Maintain aspect ratio */
+                margin: 0 auto; /* Center the image horizontally */
             }
         }
+
+
 
         .news-section {
             max-width: 1200px;
@@ -591,6 +608,23 @@
                 padding: 8px 15px; /* Reduce button padding */
             }
         }
+
+        @media (max-width: 768px) {
+            nav {
+                display: flex; /* Ensure links are in a row */
+                justify-content: space-around; /* Distribute links evenly */
+                padding: 10px 0; /* Adjust padding for smaller screens */
+            }
+
+            nav a {
+                font-size: 0.9em; /* Reduce font size for smaller links */
+                margin: 0 5px; /* Reduce spacing between links */
+                padding: 5px 10px; /* Adjust padding for touch-friendly size */
+                text-decoration: none; /* Keep links clean and uncluttered */
+                white-space: nowrap; /* Prevent wrapping of text */
+            }
+        }
+
     </style>
 </head>
 
