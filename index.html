@@ -527,21 +527,68 @@
         }
 
         @media (max-width: 768px) {
-            .join-contact-section {
-                flex-direction: column;
-                align-items: center;
-                padding: 30px;
+            .contact-form {
+                width: 100%; /* Ensure the form takes full width on mobile */
+                max-width: 100%; /* Remove max-width restriction for mobile */
+                margin: 0 auto; /* Center the form */
+                padding: 0 10px; /* Add padding for spacing on smaller screens */
             }
 
-            .contact-form {
-                margin-left: 0;
-                max-width: 100%;
-                width: 100%;
+            .contact-form label {
+                font-size: 1.2em; /* Slightly reduce label font size */
+            }
+
+            .contact-form input,
+            .contact-form textarea {
+                width: 100%; /* Make input fields take up full width */
+                font-size: 1em; /* Ensure the font size is readable */
+                padding: 10px; /* Adjust padding for a clean look */
+                margin-bottom: 15px; /* Add spacing between fields */
+                box-sizing: border-box; /* Prevent overflow due to padding */
+            }
+
+            .contact-form textarea {
+                height: 120px; /* Set a smaller height for mobile */
+            }
+
+            .contact-form button {
+                width: 100%; /* Make the button full-width for better usability */
+                font-size: 1.2em; /* Adjust font size for the button */
+                padding: 12px; /* Adjust padding */
+            }
+        }
+
+        
+
+
+        @media (max-width: 768px) {
+            .join-contact-section {
+                flex-direction: column; /* Stack the elements vertically */
+                align-items: center; /* Center align elements */
+                padding: 20px; /* Reduce padding */
             }
 
             .circle {
-                width: 350px;
-                height: 350px;
+                width: 300px; /* Make the circle smaller */
+                height: 300px; /* Maintain proportional height */
+                padding: 15px; /* Add some padding for spacing inside the circle */
+                margin-bottom: 35px; /* Add space below the text */
+
+            }
+
+            .circle h2 {
+                font-size: 1.2em; /* Reduce heading font size */
+                margin-bottom: 10px; /* Add space below the heading */
+            }
+
+            .circle p {
+                font-size: 1em; /* Reduce paragraph font size */
+                margin-bottom: 15px; /* Add space below the text */
+            }
+
+            .circle .btn {
+                font-size: 1em; /* Adjust button font size */
+                padding: 8px 15px; /* Reduce button padding */
             }
         }
     </style>
